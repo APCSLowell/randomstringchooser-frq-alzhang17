@@ -10,11 +10,11 @@ public class RandomStringChooser
    }
  }
  public String getNext(){
-   if(words.size() == 0){
+   if(wordsList.size() == 0){
      return "NONE";
    }
-   int i = (int)(Math.random()* words.size());
-   return words.remove(i);
+   int i = (int)(Math.random()* wordsList.size());
+   return wordsList.remove(i);
 } 
   //Heads up! 
   //You will get a very confusing error message until you have working code in part b as well
